@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعمالنا - لجنة الميديا - نادي بصمة أمل</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="work.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="poster-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        
+        <div class="header">
+            <div class="logo">
+                <img src="img/n1.PNG" alt="">
+            </div>
+            <h1 class="title">أعمالنا</h1>
+            <h2 class="subtitle">لجنة الميديا - نادي بصمة أمل</h2>
+        </div>
+        
+        <div class="nav-menu">
+       <div class="nav-item"><a href="index.html">الرئيسية</a></div>
+            <div class="nav-item active"><a href="work.html">أعمالنا</a></div>
+            <div class="nav-item"><a href="contact.html">تواصل معنا </a></div>
+        </div>
+        
+<div class="filter-section">
+    <button class="filter-btn active" data-filter="all">الكل</button>
+    <button class="filter-btn" data-filter="تصميم">تصميم</button>
+    <button class="filter-btn" data-filter="بطاقات">بطاقات</button>
+</div>
+        
+        <div class="projects-grid" id="projectsGrid">
+    <!-- البطاقات ستتم إضافتها ديناميكيًا بواسطة JavaScript -->
+</div>
+    <div id="projectModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-close" onclick="closeModal()">
+            <i class="material-icons">close</i>
+        </div>
+        <div class="modal-image">
+            <img id="modalImage" src="" alt="">
+        </div>
+        <div class="modal-content-body">
+            <h3 id="modalTitle" class="modal-title"></h3>
+            <div class="modal-meta">
+                <div class="modal-meta-item">
+                    <i class="material-icons">event</i>
+                    <span id="modalDate"></span>
+                </div>
+                <div class="modal-meta-item">
+                    <i class="material-icons">category</i>
+                    <span id="modalType"></span>
+                </div>
+            </div>
+            <p id="modalDescription" class="modal-description"></p>
+        </div>
+    </div>
+</div>
+
+
+       
+    </div>
+    
+    
+    
+   <script src="work.js"></script>
+</body>
+</html>
